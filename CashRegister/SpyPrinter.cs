@@ -2,7 +2,7 @@ using System.Dynamic;
 
 namespace CashRegister
 {
-	public class SpyPrinter : IPrinter
+	public class SpyPrinter : Printer
 	{
         public SpyPrinter()
         {
@@ -11,9 +11,10 @@ namespace CashRegister
 
         public bool HasPrinted { get; set; }
 
-        public void Print(string content)
+        public override void Print(string content)
 		{
             // send message to a real printer
+            base.Print(content);
             this.HasPrinted = true;
         }
 	}
