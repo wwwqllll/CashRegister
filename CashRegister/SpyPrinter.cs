@@ -2,9 +2,9 @@ using System.Dynamic;
 
 namespace CashRegister
 {
-	public class Printer : IPrinter
+	public class SpyPrinter : IPrinter
 	{
-        public Printer()
+        public SpyPrinter()
         {
             this.HasPrinted = false;
         }

@@ -4,9 +4,9 @@ namespace CashRegister
 {
 	public class CashRegister
 	{
-		private readonly Printer printer;
+		private readonly SpyPrinter printer;
 
-		public CashRegister(Printer printer)
+		public CashRegister(SpyPrinter printer)
 		{
 			this.printer = printer;
 		}
